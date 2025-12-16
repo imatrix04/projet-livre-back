@@ -2,9 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 
-app.use('/assets/images', express.static(path.join(__dirname, '../assets/images')));
-
 const app = express();
+
+app.use('/assets/images', express.static(path.join(__dirname, '../assets/images')));
 
 const bookRoutes = require('./routes/book.routes');
 const uploadRoutes = require('./routes/upload.routes');
